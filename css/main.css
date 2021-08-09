@@ -357,9 +357,11 @@ template {
 }
 
 header,
-section,
-footer {
-  border: 1px solid blue;
+footer,
+body {
+  width: 1600px;
+  border: 1px solid black;
+  margin: auto;
 }
 
 body {
@@ -537,6 +539,7 @@ h3 {
   text-align: center;
   width: 200px;
   height: 50px;
+  cursor: pointer;
   background: var(--back-blue);
   color: var(--white-text);
   font-weight: 700;
@@ -660,7 +663,9 @@ h3 {
 }
 
 .team {
+  width: 1600px;
   background: var(--back-comanda-prod);
+  margin: auto;
   padding: 94px 0 94px 0;
 }
 
@@ -884,7 +889,6 @@ h3 {
 
 .footer {
   background: var(--back-zakaz);
-  padding: 60px 0 60px 0;
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
@@ -912,7 +916,6 @@ h3 {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  margin-top: 20px;
   -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -959,10 +962,12 @@ h3 {
 }
 
 .footer__item--adress {
+  padding-top: 60px;
   margin-right: 70px;
 }
 
 .footer__item--join {
+  margin-right: 93px;
   text-align: center;
 }
 
@@ -979,6 +984,7 @@ h3 {
 
 .footer__tel {
   display: block;
+  margin-bottom: 60px;
   text-decoration: none;
   font-weight: 500;
   font-size: 14px;
@@ -988,6 +994,48 @@ h3 {
 }
 
 .footer__title {
+  margin-top: 72px;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.17;
+  color: var(--white-text);
+}
+
+.footer__form--mail {
+  width: 358px;
+  height: 50px;
+  padding-left: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  background-color: var(--back-zakaz);
+}
+
+.footer__btn {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 200px;
+  height: 50px;
+  cursor: pointer;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  background-color: var(--blue-text);
+  border-radius: 4px;
+  border: none;
+}
+
+.footer__btn--icon {
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+  fill: var(--white-text);
+}
+
+.footer__btn--title {
+  margin-left: 29px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.17;
